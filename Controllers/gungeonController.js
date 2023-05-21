@@ -12,7 +12,6 @@ weapons.get("/", async (req, res) => {
     }
 });
 
-
 //Show Route
 weapons.get('/:id', async (req, res) => {
     const { id } = req.params;
@@ -54,7 +53,7 @@ weapons.put('/:id', async (req, res) => {
         const updatedWeapon = await updateWeapon(id, body)
         res.status(200).json(updatedWeapon)
     } catch (error) {
-        res.status(400).json({ error: error }); 
+        res.status(400).json({ error: error });
     }
 });
 

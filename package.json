@@ -6,5 +6,24 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "pg-promise": "^11.4.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "gungeonbackend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyMCR/PortfolioBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnnyMCR/PortfolioBackend/issues"
+  },
+  "homepage": "https://github.com/JohnnyMCR/PortfolioBackend#readme",
+  "description": ""
 }

@@ -1,45 +1,45 @@
 const db = require('../db/dbConfig');
 
-const getAllSnacks = async () => {
+const getAllWeapons = async () => {
     try {
-        const allSnacks = await db.any("SELECT * FROM snacks");
-        return allSnacks;
+        const allWeapons = await db.any("SELECT * FROM weapons");
+        return allWeapons;
     } catch (error) {
         return error;
     }
 };
 
-const getASnack = async (id) => {
+const getAWeapon = async (id) => {
     try {
-        const oneSnack = await db.one("SELECT * FROM snacks WHERE id=$1", id);
-        return oneSnack;
+        const oneWeapon = await db.one("SELECT * FROM weapons WHERE id=$1", id);
+        return oneWeapon;
     } catch (error) {
         return error;
     }
 };
 
-const createSnack = async (snackToAdd) => {
+const createWeapon = async (weaponToAdd) => {
     try {
-        const newSnack = await db.one("INSERT INTO snacks (name, type, sugar, protein, fiber, sodium, calories, img) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *", [snackToAdd.name, snackToAdd.type, snackToAdd.sugar, snackToAdd.protein, snackToAdd.fiber, snackToAdd.sodium, snackToAdd.calories, snackToAdd.img]);
-        return newSnack;
+        const newWeapon = await db.one("INSERT INTO weapon (name, notes, quote, quality, type, DPS, class, img) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *", [weaponToAdd.name, weaponToAdd.type, weaponToAdd.sugar, weaponToAdd.protein, weaponToAdd.fiber, weaponToAdd.sodium, weaponToAdd.calories, weaponToAdd.img]);
+        return newWeapon;
     } catch (error) {
         return error;
     }
 };
 
-const deleteSnack = async (id) => {
+const deleteWeapon = async (id) => {
     try {
-        const deletedSnack = await db.one('DELETE FROM snacks WHERE id=$1 RETURNING *', id)
-        return deletedSnack;
+        const deletedWeapon = await db.one('DELETE FROM weapon WHERE id=$1 RETURNING *', id)
+        return deletedWeapon;
     } catch (error) {
         return error;
     };
 };
 
-const updateSnack = async (id, snack) => {
+const updateWeapon = async (id, weapon) => {
     try {
-        const updatedSnack = await db.one('UPDATE snacks SET name=$1, type=$2, sugar=$3, protein=$4, fiber=$5, sodium=$6, calories=$7, img=$8 WHERE id=$9 RETURNING *', [snack.name, snack.type, snack.sugar, snack.protein, snack.fiber, snack.sodium, snack.calories, snack.img, id])
-        return updatedSnack
+        const updatedWeapon = await db.one('UPDATE weapons SET name=$1, notes=$2, quote=$3, quality=$4, type=$5, DPS=$6, class=$7, img=$8 WHERE id=$9 RETURNING *', [weapon.name, weapon.type, weapon.sugar, weapon.protein, weapon.fiber, weapon.sodium, weapon.calories, weapon.img, id])
+        return updatedWeapon
     } catch (error) {
         return error;
     }
