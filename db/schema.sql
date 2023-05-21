@@ -7,8 +7,8 @@ CREATE DATABASE weapons_dev;
 CREATE TABLE weapons (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
-    notes TEXT NOT NULL,
-    quote TEXT NOT NULL,
+    notes TEXT,
+    quote TEXT,
     quality VARCHAR,
     type TEXT NOT NULL,
     DPS INT NOT NULL,

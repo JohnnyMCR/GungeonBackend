@@ -1,6 +1,5 @@
 \c weapons_dev
 
-
 INSERT INTO weapons (name, notes, quote, quality, type, DPS, class, img) VALUES
 ('Casey', 'Charged swings reflect nearby bullets. Does not crack secret walls. Increases curse by 2.', 'Batting .50', 'D', 'Charged', 50.0, 'SILLY', 'https://lh3.googleusercontent.com/61Ic4fKkRJEumi3v0yqQjZ06HThWHv3wv8okWYncRH3h9dYrbRmHKqIm-rLMPJpEcDZ9MknZkmSPNVnRnrUoxkE1ffPoEvOBmtuX-4oIWQ'),
 ('Microtransaction Gun', 'Shoots various figurines, books, and gems at the cost of 1 coin per shot.', 'Pay to Win', 'A', 'Semiautomatic', 44.4, 'PISTOL', 'https://lh3.googleusercontent.com/L0pEVjY0g8ymUwT4SVExyvmYh-fnjkaGUXsMSo6Ez-tc8CdHGTSeEtD8OxJUBd4Ks9m6Ux2nIp2ZFfpzM1q05AYkENAxagkx8xbi_MqeOw'),
@@ -14,4 +13,4 @@ INSERT INTO weapons (name, notes, quote, quality, type, DPS, class, img) VALUES
 ('Gungeon Ant', 'In oil mode, creates oil puddles on impact. In fire mode, fires fireballs that pierce and burn. Reloading switches modes.', 'What Army?', 'C', 'Semiautomatic', 30.0, 'FIRE', 'https://lh3.googleusercontent.com/8Oga3i2qYYQIli52JuAHBSfeZxsduoF5W3ox4TpjUtWw7ZkPsFjOdFoHJ6ATCUlX74DnkwioUbzVeGNtI9pLJxzFiG27XC_e-UBGmLRu'),
 ('Cold 45', 'Fires bullets that freeze enemies.', 'Shatterday Night Special', 'B', 'Semiautomatic', 25.3, 'ICE', 'https://lh3.googleusercontent.com/G0RYGZdPbUHgbL35m5dRJlUFfCWJEZ61q1zpd3VC9PxhjhvsDR6ExM1ZaDm9wQRDQPtccLMwl5s_IlQ3N8j9VeAPTRtNKKwDn091M8coVQ'),
 ('Plunger', 'Fires a stream of poison. Has a chance to poison enemies and leaves poison puddles on impact.', 'Take Your Best Shot!', 'C', 'Beam', 5.0, 'POISON', 'https://lh3.googleusercontent.com/HxxDCr7U_ob0qR_viptuwJrUp0gXgHc0Wt-Ucnl2xp0R8kUNE24NvWzsLf1gYjzQMr1wgtb_LnxNqogQILxj0A1fbGl-BrPsez7U4QCQCQ'),
-('Kruller Glaive', 'Throws a boomerang-like projectile that homes in on multiple enemies, damaging and sometimes stunning them.', 'Studied the Blade', 'B', 'Charged', 20.8, 'NONE', 'https://lh3.googleusercontent.com/g2WKyER1W_6ID8c5QvdytUJA4tYHAyro404lyL01l5ozMKLi5lmiLIcbyECHo55jKYDhT9yd75zg3NCUywji5ZRKpWHWpu3IOPxzo-gCoQ'),
+('Kruller Glaive', 'Throws a boomerang-like projectile that homes in on multiple enemies, damaging and sometimes stunning them.', 'Studied the Blade', 'B', 'Charged', 20.8, 'NONE', 'https://lh3.googleusercontent.com/g2WKyER1W_6ID8c5QvdytUJA4tYHAyro404lyL01l5ozMKLi5lmiLIcbyECHo55jKYDhT9yd75zg3NCUywji5ZRKpWHWpu3IOPxzo-gCoQ');
