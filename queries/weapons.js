@@ -20,7 +20,7 @@ const getAWeapon = async (id) => {
 
 const createWeapon = async (weaponToAdd) => {
     try {
-        const newWeapon = await db.one("INSERT INTO weapon (name, notes, quote, quality, type, DPS, class, img) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *", [weaponToAdd.name, weaponToAdd.type, weaponToAdd.sugar, weaponToAdd.protein, weaponToAdd.fiber, weaponToAdd.sodium, weaponToAdd.calories, weaponToAdd.img]);
+        const newWeapon = await db.one("INSERT INTO weapons (name, notes, quote, quality, type, dps, class, img) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *", [weaponToAdd.name, weaponToAdd.notes, weaponToAdd.quote, weaponToAdd.quality, weaponToAdd.type, weaponToAdd.dps, weaponToAdd.class, weaponToAdd.img]);
         return newWeapon;
     } catch (error) {
         return error;
@@ -29,7 +29,7 @@ const createWeapon = async (weaponToAdd) => {
 
 const deleteWeapon = async (id) => {
     try {
-        const deletedWeapon = await db.one('DELETE FROM weapon WHERE id=$1 RETURNING *', id)
+        const deletedWeapon = await db.one('DELETE FROM weapons WHERE id=$1 RETURNING *', id)
         return deletedWeapon;
     } catch (error) {
         return error;
@@ -38,7 +38,7 @@ const deleteWeapon = async (id) => {
 
 const updateWeapon = async (id, weapon) => {
     try {
-        const updatedWeapon = await db.one('UPDATE weapons SET name=$1, notes=$2, quote=$3, quality=$4, type=$5, DPS=$6, class=$7, img=$8 WHERE id=$9 RETURNING *', [weapon.name, weapon.type, weapon.sugar, weapon.protein, weapon.fiber, weapon.sodium, weapon.calories, weapon.img, id])
+        const updatedWeapon = await db.one('UPDATE weapons SET name=$1, notes=$2, quote=$3, quality=$4, type=$5, dps=$6, class=$7, img=$8 WHERE id=$9 RETURNING *', [weapon.name, weapon.notes, weapon.quote, weapon.quality, weapon.type, weapon.dps, weapon.class, weapon.img, id])
         return updatedWeapon
     } catch (error) {
         return error;

@@ -1,6 +1,6 @@
 \c weapons_dev
 
-INSERT INTO weapons (name, notes, quote, quality, type, DPS, class, img) VALUES
+INSERT INTO weapons (name, notes, quote, quality, type, dps, class, img) VALUES
 ('Casey', 'Charged swings reflect nearby bullets. Does not crack secret walls. Increases curse by 2.', 'Batting .50', 'D', 'Charged', 50.0, 'SILLY', 'https://lh3.googleusercontent.com/61Ic4fKkRJEumi3v0yqQjZ06HThWHv3wv8okWYncRH3h9dYrbRmHKqIm-rLMPJpEcDZ9MknZkmSPNVnRnrUoxkE1ffPoEvOBmtuX-4oIWQ'),
 ('Microtransaction Gun', 'Shoots various figurines, books, and gems at the cost of 1 coin per shot.', 'Pay to Win', 'A', 'Semiautomatic', 44.4, 'PISTOL', 'https://lh3.googleusercontent.com/L0pEVjY0g8ymUwT4SVExyvmYh-fnjkaGUXsMSo6Ez-tc8CdHGTSeEtD8OxJUBd4Ks9m6Ux2nIp2ZFfpzM1q05AYkENAxagkx8xbi_MqeOw'),
 ('Shock Rifle', 'Fires a zap of electricity.', 'Zap', 'B', 'Semiautomatic', 27.9, 'RIFLE', 'https://lh3.googleusercontent.com/aD7XFTFNIQlBLAEyKMXgNUVMDwgGINDYcvYPhnpHkA41kYwkSQR9jsd0eO3V65IcrdyWSkZirNDRDqsvk9_bWziyZYn2U0_cYqTpfEGqAg'),

@@ -11,7 +11,7 @@ CREATE TABLE weapons (
     quote TEXT NOT NULL,
     quality VARCHAR,
     type TEXT NOT NULL,
-    DPS INT NOT NULL,
+    dps INT NOT NULL,
     class TEXT NOT NULL,
     img VARCHAR
 );
